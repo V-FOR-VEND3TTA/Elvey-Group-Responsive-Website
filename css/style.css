@@ -315,7 +315,7 @@
     font-weight: 400;
 }
 
-/* Cookie Popup */
+/* Cookie Popup Start */
 .cookie-container {
 	display: flex;
 	align-content: center;
@@ -367,7 +367,9 @@
 .agree button:hover {
 	background: var(--button-background-hover);
 		color: var(--white-text);
-}
+} 
+/* Cookie Popup Section */
+
 
 /* Footer Section */
 .footer {
@@ -396,7 +398,7 @@
 
 .footer ul li a img {
     filter: invert(1);
-    max-width: 20px;
+    max-width: 10px;
 }
 
 
