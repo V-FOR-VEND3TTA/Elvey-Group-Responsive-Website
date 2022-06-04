@@ -395,12 +395,11 @@
     display: inline-block;
     margin: 0 10px;
 }
-
+/*
 .footer ul li a img {
-    filter: invert(1);
-    max-width: 10px;
+    filter: invert(1)
 }
-
+*/
 
 /*------------------------- MEDIA QUERIES ------------------------- */
 @media (max-width: 991px) {
