@@ -9,16 +9,31 @@
     <link rel="stylesheet" href="css/style.css">
     <!--Elvey Favicon-->
     <link rel="shortcut icon" href="assets/images/square.png" type="image/x-icon">
+    <!-- Material Icon CDN -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
     <!--Hero section-->
     <div class="hero-section">
         <header>
-            <a href="#">
+            <a href="#home">
                 <img class="logo" src="assets/images/elvey-logo.png">
             </a>
-
-            <div class="toggle"></div>
+            <!--Toggle Menu Start-->
+                <!-- material icons CDN in the head section, see the html settings 👆--
+            <ul class="menu">
+                <li><a class="menuItem" href="#home">Home</a></li>
+                <li><a class="menuItem" href="#services">Services</a></li>
+                <li><a class="menuItem" href="#about">About</a></li>
+                <li><a class="menuItem" href="#contact">Contacts</a></li>
+            </ul>
+            <button class="hamburger">
+                -- material icons https://material.io/resources/icons/ --
+                <i class="menuIcon material-icons">menu</i>
+                <i class="closeIcon material-icons">close</i>
+            </button>
+            --Toggle Menu Start-->
+            <!--<div class="toggle"></div>-->
         </header>
         <img src="assets/images/elveygroup-designelement-light.png" alt="Elvey Group Building">
         <div class="content" data-0-top="opacity:0;left:100px;" data-200-top="opacity:1;left:0px;">
@@ -43,7 +58,7 @@
     </div>
 </section>
     <!--Services-->
-    <section class="services">
+    <section class="services" id="services">
         <h2 class="heading" data-center-center="opacity:1;left:0;" data-0-bottom="opacity:0;left:500px;">Our Services</h2>
         <p class="text" data-center-center="opacity:1;right:0;" data-0-bottom="opacity:0;right:200px;">
             Technical support is only a phone call away. When you dial our technical helpline, a highly qualified and experienced technical help team is standing by to assist you. 
@@ -139,7 +154,7 @@
     </section>
 
     <!--Get in Contact-->
-    <section class="contact">
+    <section class="contact" id="#about">
         <div data-center-center="opacity:1;left:0;" data-0-bottom="opacity:0;left:-400px;">
             <h2 class="heading">Contact Us</h2>
             <p class="text">Please note that our <B>Trading Hours</B> are
@@ -212,5 +227,6 @@
     <script type="text/javascript">
         var s = skrollr.init();
     </script>
+    <!--<script src="js/hamburger.js"></script>-->
 </body>
 </html>
