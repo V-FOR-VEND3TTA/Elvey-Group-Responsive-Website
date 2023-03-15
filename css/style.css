@@ -491,6 +491,27 @@ body {
         padding: 50px;
     }
 
+    /* Scrolling functionality */
+    .body::-webkit-scrollbar {
+        -webkit-appearance: none;
+    }
+
+    .body::-webkit-scrollbar:vertical {
+        width: 11px;
+    }
+
+    .body::-webkit-scrollbar:horizontal {
+        height: 11px;
+    }
+
+    .body::-webkit-scrollbar-thumb {
+        border-radius: 8px;
+        border: 2px solid white;
+        /* should match background, can't be transparent */
+        background-color: rgba(0, 0, 0, .5);
+    }
+
+
     .hero-section header {
         padding: 20px 50px;
     }
@@ -575,6 +596,10 @@ body {
         justify-content: center;
         text-align: center;
         max-width: 400px;
+    }
+
+    .cookie-container {
+        max-width: 550px;
     }
 
     .footer {
